@@ -1,0 +1,18 @@
+<br>
+<br>
+<br>
+<br>
+<!-- in the for loop shown below i and count are variables -->
+ <div style="display: flex;flex-wrap: wrap;">
+  @for (i of cards; track $index) {
+<div class="card" style="width: 18rem;display: flex;margin: 20px;padding: 20px;">
+    <img src="{{i.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{i.title}}</h5>
+      <p class="card-text">{{i.description}}</p>
+      <a class="btn btn-primary " (click)="viewProductDetail(i)">View Details</a>
+    </div>
+  </div>
+  
+}
+</div>

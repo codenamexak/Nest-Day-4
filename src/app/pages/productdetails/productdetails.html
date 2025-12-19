@@ -1,0 +1,16 @@
+<p>productdetails works!</p>
+<div class="container text-center" *ngIf="product">
+  <div class="row">
+    <div class="col">
+      <img src="{{product.image}}" alt="{{product.title}}">
+    </div>
+    <div class="col">
+      <h1>{{ product.title }}</h1>
+      <h3>${{ product.price }}</h3>
+      <p>{{ product.description }}</p>
+      <button type="button" class="btn btn-primary">Buy Now</button>
+      <button type="button" class="btn btn-warning">Add to Cart</button>
+
+    </div>
+  </div>
+</div>
